@@ -1,0 +1,37 @@
+.round-checkbox {
+    position: relative;
+    padding-left: 30px; /* Отступ слева для помещения круглого флажка */
+    cursor: pointer;
+    bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  .round-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    margin-left: -25px;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #24A0ED;
+    background-color: #fff;
+  }
+  
+  .round-checkbox input:checked + .checkmark:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #24A0ED;
+  }

@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+  display: none; /* Скрываем полосу прокрутки только для браузеров, использующих WebKit (например, Chrome, Safari) */
+}
+
+/* Для Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Для Internet Explorer и Edge */
+html {
+  -ms-overflow-style: none;
+}
